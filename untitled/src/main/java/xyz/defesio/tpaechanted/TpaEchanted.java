@@ -1,12 +1,13 @@
 package xyz.defesio.tpaechanted;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import xyz.defesio.tpaechanted.command.TpaCommand;
 
 public final class TpaEchanted extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getCommand("tpa").setExecutor(new TpaCommand());
 
     }
 

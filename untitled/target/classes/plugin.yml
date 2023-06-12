@@ -1,5 +1,5 @@
 name: TpaEchanted
-version: '${project.version}'
+version: '1.0-SNAPSHOT'
 main: xyz.defesio.tpaechanted.TpaEchanted
 api-version: 1.20
 commands:
