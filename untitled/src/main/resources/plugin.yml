@@ -1,0 +1,4 @@
+name: TpaEchanted
+version: '${project.version}'
+main: xyz.defesio.tpaechanted.TpaEchanted
+api-version: 1.20
