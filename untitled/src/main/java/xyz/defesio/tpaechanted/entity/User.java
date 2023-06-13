@@ -2,8 +2,11 @@ package xyz.defesio.tpaechanted.entity;
 
 import org.bukkit.entity.Player;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     Player player;
+    Player requester;
     Coords currentCoords;
     Coords lastCoords;
 
@@ -25,6 +28,14 @@ public class User {
 
     public Coords getCurrentCoords() {
         return currentCoords;
+    }
+
+    public Player getRequester() {
+        return requester;
+    }
+
+    public void setRequester(Player requester) {
+        this.requester = requester;
     }
 
     public void setCurrentCoords(Coords currentCoords) {
